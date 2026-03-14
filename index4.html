@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itineraries</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      text-align: center;
+      background-image: url(images/mapbg.jpg);
+    }
+    /* body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('images/mapbg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+} */
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: -1;
+  background: url('images/mapbg.jpg') no-repeat center center fixed;
+}
+
+    h1 {
+      font-size: 64px;
+      color: #264bcf;
+      margin-top: 60px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    .subheading {
+      color: #264bcf;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .dropdown-container {
+      margin-bottom: 50px;
+    }
+
+    select {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .image-gallery img {
+      width: 180px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 50% / 30%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ITINERARIES</h1>
+  <div class="subheading">— that beckon every traveller —</div>
+
+  <div class="dropdown-container">
+    <select>
+      <option value="">Interest</option>
+      <option value="nature">Nature</option>
+      <option value="adventure">Adventure</option>
+      <option value="culture">Culture</option>
+      <option value="relax">Relaxation</option>
+    </select>
+
+    <select>
+      <option value="">Trip Length</option>
+      <option value="1-3">1–3 Days</option>
+      <option value="4-7">4–7 Days</option>
+      <option value="8+">8+ Days</option>
+    </select>
+  </div>
+
+  <div class="image-gallery">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach" />
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Mountains" />
+    <img src="https://images.unsplash.com/photo-1587502536263-929fcd8c8d9b" alt="Temple" />
+    <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="Nature Trail" />
+  </div>
+
+</body>
+</html>

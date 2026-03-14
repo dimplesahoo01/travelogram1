@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travelobot Greeting</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    .landing-section {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .left-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+    }
+
+    .text-wrapper {
+      background-image: url('/mnt/data/image.png'); /* your new textured image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 3rem;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      backdrop-filter: brightness(1.1);
+    }
+
+    .text-wrapper h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .text-wrapper img {
+      margin-bottom: 1rem;
+      width: 60px;
+    }
+
+    .text-wrapper p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .question-box {
+      display: flex;
+      align-items: center;
+      background-color: #c7743b;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .question-box img {
+      width: 40px;
+      height: 40px;
+      margin-right: 1rem;
+    }
+
+    .right-image {
+      flex: 1;
+      background-image: url('images/download.jpg'); /* vibrant India side image */
+      background-size:contain;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      .landing-section {
+        flex-direction: column;
+      }
+
+      .left-content, .right-image {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+
+      .question-box {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="landing-section">
+    <div class="left-content">
+      <div class="text-wrapper">
+        <h1>नमस्ते</h1>
+        <img src="images/namaste.jpg" alt="Namaste Icon" />
+        <p>ASK ME ANY QUESTION, I'D LOVE TO HEAR WHAT BROUGHT YOU HERE!</p>
+        <div class="question-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/4712/4712038.png" alt="Bot Icon" />
+          Enter your question here
+        </div>
+      </div>
+    </div>
+    <div class="right-image"></div>
+  </div>
+</body>
+</html>

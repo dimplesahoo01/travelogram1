@@ -1,0 +1,120 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-panel {
+      flex: 1;
+      background-image: url('form.jpeg'); 
+      background-size: cover;
+      background-position: center;
+    }
+
+    .right-panel {
+      flex: 1;
+      padding: 50px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .toggle {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      padding-left: 161px;
+    }
+
+    .signup {
+      color: red;
+      font-weight: bold;
+    }
+
+    .login {
+      color: black;
+      cursor: pointer;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 48%;
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-bottom: 1px solid #aaa;
+      background-color: transparent;
+      outline: none;
+    }
+.highlight{
+	padding-left: 65px;
+}
+    .button-wrapper {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+		margin-top: 85px;
+    }
+
+    button:hover {
+      background-color: #d63031;
+    }
+    .left-panel {
+      flex: 1;
+      background-image: url('form.jpeg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.4s ease-in-out;
+    }
+    
+    /* Add this for a nice overlay effect on hover */
+    .left-panel::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0); /* no overlay normally */
+      transition: background-color 0.4s ease-in-out;
+      z-index: 1;
+    }
+    
+    .left-panel:hover {
+      transform: scale(1.02);
+    }
+    
+    .left-panel:hover::before {
+      background-color: rgba(0, 0, 0, 0.2); /* light dark overlay on hover */
+    }
+    

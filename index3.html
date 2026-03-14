@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Forecast Heading Section -->
+    <div class="header">
+        <h1 style="font-family: 'Playfair Display', serif;">Weather Forecast</h1>
+    </div>
+
+    <!-- Weather Card -->
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Search for a city" spellcheck="false">
+            <button><img src="images2/search.png" alt=""></button>
+        </div>
+        <div class="error"><p>Invalid city name</p></div>
+        <div class="weather">
+            <img src="images2/rain.png" class="weather-icon" alt="">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New York</h2> 
+            <div class="details">
+                <div class="col">
+                    <img src="images2/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images2/wind.png">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script3.js"></script>
+</body>
+</html>
